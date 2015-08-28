@@ -29,7 +29,7 @@ class Flight {
   }
   var shortNumber: String {
     get {
-      return number.substringFromIndex(advance(number.startIndex, 2))
+      return number.substringFromIndex(number.startIndex.advancedBy(2))
     }
   }
   var checkedIn = false
